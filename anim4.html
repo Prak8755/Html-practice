@@ -1,0 +1,75 @@
+<html>
+<head>
+	<style>
+
+div{
+
+
+	width: 10%;
+	height: 50px;
+	background-color: red;
+	position: relative;
+	animation: mymove 6s infinite;
+
+	/*  The above property can also be written like this 
+
+	animation-name: mymove;
+	animation-duration: 5s;
+	animation-iteration-count: infinite; 
+
+	  */
+}
+
+#div1{
+
+    animation-timing-function: linear;
+}
+
+
+#div2{
+
+    animation-timing-function: ease;
+}
+
+#div3{
+
+    animation-timing-function: ease-in;
+}
+
+#div4{
+
+    animation-timing-function: ease-out;
+}
+
+#div5{
+
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mymove {
+
+
+	from{  left:0px; }
+	to{  left: 800px; }
+}
+
+	</style>
+
+</head>
+
+
+<body>
+
+
+	<div id="div1">Linear </div>
+	<div id="div2">ease </div>
+	<div id="div3">ease-in </div>
+	<div id="div4">ease-out</div>
+	<div id="div5">ease-in-out</div>
+
+
+
+	</body>
+
+
+	</html>
